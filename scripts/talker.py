@@ -5,9 +5,10 @@ from std_msgs.msg import Int8
 
 enable = 1
 
-def talker():
+def talker_listener():
 
     pub = rospy.Publisher('barrera_solicitud', Int8)
+#    sub = rospy.Subscriber("barrera_solicitud", Int8, callback)
     rospy.init_node('barrera_solicitud')
     while not rospy.is_shutdown():
 
@@ -22,6 +23,7 @@ def talker():
 
 if __name__ == '__main__':
     try:
-        talker()
+        talker_listener()
+	#rospy.spin()
     except rospy.ROSInterruptException:
         pass
