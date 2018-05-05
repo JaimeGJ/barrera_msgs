@@ -13,6 +13,7 @@ def talker_listener():
     while not rospy.is_shutdown():
 
 	global enable
+	enable = ipnut("1 = abrir | 2 = cerrar : ")
         rospy.loginfo(enable)
 	pub.publish(Int8(enable))
         rospy.sleep(2.0)
