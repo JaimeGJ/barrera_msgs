@@ -1,2 +1,2 @@
-# barrera_msgs
-Paquete para mandar mensajes a la Raspberry que controla la barrera
+# WiFi_ROS
+Node to comunicate between Raspberries Pi 3 B
